@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  color: white;
+}
+
+header {
+  width: 10%;
+  background-color: black;
+  height: 100vh;
+}
+
+main {
+  width: 90%;
+  background-color: #141922;
+  height: 100vh;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-spotify {
+  background: url("../img/logo-small.svg");
+}
+
+.home-logo {
+  background: url("../img/home.svg");
+}
+
+.cerca-logo {
+  background: url("../img/search.svg");
+  filter: invert(0.5);
+}
+
+.libreria-logo {
+  background: url("../img/libreria.svg");
+}
+
+.logo {
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.display {
+  display: none;
+}
