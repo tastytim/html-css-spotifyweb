@@ -23,15 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 70px;
 }
 
 .container-right {
   margin-left: 10vw;
-  width: 90%;
   background-color: #141922;
-  height: 100vh;
-  min-height: 667px;
-  max-height: 100%;
 }
 
 ul {
@@ -63,33 +60,32 @@ ul {
   left: -1px;
 }
 
-.row,
-h1 {
+.row {
+  column-gap: 10px;
+}
+
+.row-70px {
   position: relative;
-  height: 10%;
   width: 100%;
+  height: 70px;
   padding: 0 10px;
-  min-height: 10%;
   overflow: auto;
 }
 
 .row-menu-navigator {
   text-align: center;
-  line-height: 1.2;
+  line-height: 2;
   color: #828389;
+  height: 70px;
+  font-weight: bold;
 }
 
 .row-menu-navigator ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 7px;
   text-transform: uppercase;
-}
-
-.row-upgrade {
-  background-color: #080b12;
-  text-align: right;
 }
 
 .button-upgrade {
@@ -101,6 +97,8 @@ h1 {
   right: 0;
   top: 50%;
   transform: translate(-5%, -50%);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .button-upgrade a {
@@ -109,11 +107,10 @@ h1 {
 }
 
 .row-flex-wrap-music {
-  height: 80%;
-  min-height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .row-navig-flex {
@@ -125,10 +122,63 @@ h1 {
 }
 
 .div-music-cube {
-  width: 50%;
+  width: calc(50% - 5px);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.row-flex-wrap-music p,
+.row-flex-wrap-music ~ p {
+  color: #828389;
+}
+
+.row-flex-wrap-music ~ p,
+.row-flex-wrap-music ~ h1,
+.h1 {
+  padding: 10px;
 }
 
 .row-flex-wrap-music img {
   width: 100%;
-  height: 70%;
+  height: 65%;
 }
+
+/* CONTAINER PLAYER */
+
+.container-player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.col-3-1 img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.play-line {
+  width: 70px;
+  height: 1px;
+  background: 1px solid #5a5a5a;
+}
+
+.col-3-1{
+    width: calc(100%/3);
+    display: inline;
+    line-height: 70px;
+}
+
+.div-block{
+    display: block;
+}
+
+
