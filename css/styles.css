@@ -5,64 +5,130 @@
 }
 
 body {
-  display: flex;
-  color: white;
+  font-size: 11px;
 }
 
-header {
+.container-spotify {
+  display: flex;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container-left {
   width: 10%;
   background-color: black;
   height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-main {
+.container-right {
+  margin-left: 10vw;
   width: 90%;
   background-color: #141922;
   height: 100vh;
+  min-height: 667px;
+  max-height: 100%;
 }
 
-.menu-nav {
+ul {
   display: flex;
+  list-style: none;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.logo-spotify {
-  background: url("../img/logo-small.svg");
+.display {
+  display: none;
 }
 
-.home-logo {
-  background: url("../img/home.svg");
+.container-left img {
+  margin: 0 5px;
 }
 
-.cerca-logo {
-  background: url("../img/search.svg");
-  filter: invert(0.5);
+.img-profile img {
+  background-color: #808080;
+  border-radius: 50%;
 }
 
-.libreria-logo {
-  background: url("../img/libreria.svg");
+.menu-nav-list {
+  margin: 5px 0;
 }
 
-.logo {
-  height: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.img-download {
+  margin: 5px 5px;
+  position: relative;
+  left: -1px;
+}
+
+.row,
+h1 {
+  position: relative;
+  height: 10%;
   width: 100%;
+  padding: 0 10px;
+  min-height: 10%;
+  overflow: auto;
 }
 
-ul li {
+.row-menu-navigator {
+  text-align: center;
+  line-height: 1.2;
+  color: #828389;
+}
+
+.row-menu-navigator ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-transform: uppercase;
 }
 
-.flex-column {
+.row-upgrade {
+  background-color: #080b12;
+  text-align: right;
+}
+
+.button-upgrade {
+  border: 1px solid white;
+  background-color: #080b12;
+  border-radius: 25px;
+  padding: 10px 25px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+
+.button-upgrade a {
+  color: white;
+  text-decoration: none;
+}
+
+.row-flex-wrap-music {
+  height: 80%;
+  min-height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.display {
-  display: none;
+.row-navig-flex {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.div-music-cube {
+  width: 50%;
+}
+
+.row-flex-wrap-music img {
+  width: 100%;
+  height: 70%;
 }

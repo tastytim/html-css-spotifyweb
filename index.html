@@ -2,43 +2,127 @@
 <html>
   <head>
     <title>SpotiFy</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <body>
-      <header>
-        <!-- MENU NAV HEADER -->
-        <div class="menu-nav">
-          <div class="menu-nav-list-1">
-            <ul>
-              <li><div class="logo-spotify logo"></div></li>
-              <li>
-                <div class="home-logo logo"></div>
-                <div class="display">Home</div>
-              </li>
-              <li>
-                <div class="cerca-logo logo"></div>
-                <div class="display">Cerca</div>
-              </li>
-              <li>
-                <div class="libreria-logo logo"></div>
-                <div class="display">La tua libreria</div>
-              </li>
-            </ul>
+      <header></header>
+      <main>
 
-            <div></div>
+        <!-- MENU NAVIGATION -->
+        <div class="container-spotify">
+          <div class="container-left">
+            <div class="menu-nav-list">
+              <ul>
+                <li><img class="logo-spotify logo" src="img/logo-small.svg" alt="img-1"></img></li>
+                <li>
+                  <img class="home-logo logo" src="img/home.svg" alt="img-2"></img>
+                  <span class="display">Home</span>
+                </li>
+                <li>
+                  <img class="cerca-logo logo" src="img/search.svg"alt="img-3" ></img>
+                  <span class="display">Cerca</span>
+                </li>
+                <li>
+                  <img class="libreria-logo logo" src="img/libreria.svg" alt="img-4"></img>
+                  <span class="display">La tua libreria</span>
+                </li>
+              </ul>
+   
+            </div>
+
+            <div class="menu-nav-list">
+              <h3 class="display">PLAYLIST</h3>
+              <span class="plus display">+</span>
+              <span class="display">Crea Playlist</span>
+              <ul class="display">
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+              </ul>
+            </div>
+
+            <div class="menu-nav-list">
+                <ul>
+                  <li class="img-download"><img src="img/download.svg" alt="img-5"></li>
+                  <li class="img-profile"><img  src="img/profile.svg" alt="img-6"></li>
+              </ul>
+            </div>
           </div>
-          <div class="menu-nav-list-2">
-            <div><h3 class="">PLAYLIST</h3></div>
-            <div></div>
+
+
+          <!-- CONTAINER MUSIC -->
+          <div class="container-right">
+              <div class="row row-upgrade">
+                  <button class="button-upgrade"><a href="">effetua l'upgrade</a></button>
+              </div>
+              <div class="row row-menu-navigator">
+                  <ul class="row-navig-flex">
+                      <li>in evidenza</li>
+                      <li>podcast</li>
+                      <li>classifiche</li>
+                      <li>generi e mood</li>
+                      <li>nuove uscite</li>
+                      <li>scopri</li>
+                  </ul>
+              </div>
+              <!-- MUSIC_BLOCK-1 -->
+              <h1>Recently played</h1>
+              <div class="row row-flex-wrap-music">
+                  <div class="div-music-cube">
+                      <img src="img/metal_lifting.jpg" alt="metal">
+                      <h3>Heavy Metal</h3>
+                      <p>Subtitle</p>
+                  </div>
+                  <div class="div-music-cube">
+                      <img src="img/stranger.jpeg" alt="stranger">
+                      <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                      <p>Kyle Dixon & Michael Stein</p>
+                  </div>
+                  <div class="div-music-cube">
+                      <img src="img/aquietplace.jpeg" alt="aquit">
+                      <h3>A quiet place</h3>
+                      <p>Subtitle</p>
+                  </div>
+                  <div class="div-music-cube">
+                      <img src="img/split.jpeg" alt="split">
+                      <h3>A cure for wellness</h3>
+                      <p>Subtitle</p>
+                  </div>
+                  <div class="div-music-cube">
+                      <img src="img/cure.jpeg" alt="cure">
+                      <h3>Sinister</h3>
+                      <p>Subtitle</p>
+                  </div>
+              </div>
+<!-- MUSIC_BLOCK-2 -->
+                <h1>Creato per John Doe</h1>
+                <p>Piu ascolti,piu accurati saranno i suggerimenti.</p>
+                <div class="row row-flex-wrap-music">
+                    <div class="div-music-cube">
+                    <img src="img/radar.jpeg" alt="radar">
+                
+             <p>Subtitle</p>
+                  </div>
+            <div class="div-music-cube">
+              <img src="img/mixdaily.jpeg" alt="dailymix">
+              <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                     <p>Kyle Dixon & Michael Stein</p>
+             </div>
+    
+                </div>
+            
           </div>
-          <div class="menu-nav-list-3"></div>
         </div>
-      </header>
 
-      <main></main>
+      </main>
       <footer></footer>
     </body>
   </body>
