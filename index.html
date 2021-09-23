@@ -2,12 +2,15 @@
 <html>
 
 <head>
-    <title>SpotiFy</title><meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SpotiFy</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -21,16 +24,17 @@
                 <div class="container-left">
                     <div class="menu-nav-list">
                         <ul>
-                            <li><img class="logo-spotify logo" src="img/logo-small.svg" alt="img-1"></img></li>
+                            <li id="big-logo"><img src="img/logo.svg" alt="img-99"></img></li>
+                            <li id="small-logo"><img  src="img/logo-small.svg" alt="img-1"></img></li>
                             <li>
                                 <img class="home-logo logo" src="img/home.svg" alt="img-2"></img>
                                 <span class="display">Home</span>
                             </li>
-                            <li>
+                            <li class="grey-text">
                                 <img class="cerca-logo logo" src="img/search.svg" alt="img-3"></img>
                                 <span class="display">Cerca</span>
                             </li>
-                            <li>
+                            <li class="grey-text">
                                 <img class="libreria-logo logo" src="img/libreria.svg" alt="img-4"></img>
                                 <span class="display">La tua libreria</span>
                             </li>
@@ -38,11 +42,11 @@
 
                     </div>
 
-                    <div class="menu-nav-list">
+                    <div class="menu-nav-list ">
                         <h3 class="display">PLAYLIST</h3>
-                        <span class="plus display">+</span>
-                        <span class="display">Crea Playlist</span>
-                        <ul class="ul-flex-column display">
+                        <span class="display playlist-plus-text"><i class="fas fa-plus-square grey-text"></i>Crea Playlist</span>
+                        
+                        <ul class="ul-flex-column display grey-text">
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
@@ -53,10 +57,20 @@
                         </ul>
                     </div>
 
-                    <div class="menu-nav-list">
+                    
+
+                    <div class="menu-nav-list menu-nav-list-flex-end">
                         <ul>
-                            <li class="img-download"><img src="img/download.svg" alt="img-5"></li>
-                            <li class="img-profile"><img src="img/profile.svg" alt="img-6"></li>
+                            <li class="img-download grey-text">
+                                <img src="img/download.svg" alt="img-5">
+                                <span class="display">Installa app</span>
+                                
+                            </li>
+                            <li class="display"><div class="grey-line grey-text"></div></li>
+                            <li class="img-profile">
+                                <img src="img/profile.svg" alt="img-6">
+                                <span class="display"><h3>John Doe</h3></span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -91,7 +105,7 @@
 
                     <!-- MUSIC_BLOCK-1 -->
 
-                    
+
                     <h1 class="h1">Recently played</h1>
                     <div class="row row-flex-wrap-music">
                         <div class="div-music-cube">
@@ -141,8 +155,9 @@
                         </div>
                     </div>
                     <!-- MUSIC BLOCK-3 -->
-                    <h1 class="h1">Artisti piu popolari</h1>
-                    <p>Piu ascolti, piu accurati saranno i suggerementi</p>
+                    <div><h1 class="h1">Artisti piu popolari</h1>
+                    <p>Piu ascolti, piu accurati saranno i suggerementi</p></div>
+                    
                     <div class="row row-flex-wrap-music">
                         <div class="div-music-cube">
                             <img src="img/youg.jpeg" alt="metal">
@@ -157,59 +172,63 @@
                     </div>
 
                 </div>
-<!-- CONTAINER PLAYER -->
+                <!-- CONTAINER PLAYER -->
 
-<div class="container-player">
-
-
+                <div class="container-player">
 
 
-   <!-- 1 -->
-<div class="col-left">
 
-    
-                <img src="img/sinister.jpeg" alt="aaa">
-                <span class="font-bar">
-                    <div>Sinister</div>
-                <div>Brano nome</div>
-                </span>
-                <span>
-                    <div><i class="far fa-heart"></i></div>
-                    <div> <i class="far fa-folder"></i></div>
-                </span>
 
-    </div>
-    
-        
-        <!-- 2 -->
-        
-<div class="col-center">
-    <div class="bar-center player-bar-center-high">
-                <i class="fas fa-random"></i>
-                <i class="fas fa-angle-double-right rotate-left"></i>
-                <i class="fas fa-play"></i>
-                <i class="fas fa-angle-double-right"></i>
-                <i class="fas fa-redo"></i>
-            </div>
-    <div class="bar-center player-bar-center-low">
-                <span>0.25</span>
-                <span><div class="play-line"></div></span>  
-                <span>4.35</span>
-            </div> 
-</div>
-            
-       
-        <!-- 3 -->
+                    <!-- 1 -->
+                    <div class="col-left">
 
-       <div class="col-right">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-tv"></i>
-                <i class="fas fa-volume-up"></i>
-                <span><div class="play-line"></div></span>
-                
-            </div>
-  
-</div>
+
+                        <img src="img/sinister.jpeg" alt="aaa">
+                        <span class="font-bar">
+                            <div>Sinister</div>
+                            <div>Brano nome</div>
+                        </span>
+                        <span>
+                            <div><i class="far fa-heart"></i></div>
+                            <div> <i class="far fa-folder"></i></div>
+                        </span>
+
+                    </div>
+
+
+                    <!-- 2 -->
+
+                    <div class="col-center">
+                        <div class="bar-center player-bar-center-high">
+                            <i class="fas fa-random"></i>
+                            <i class="fas fa-angle-double-right rotate-left"></i>
+                            <i class="fas fa-play"></i>
+                            <i class="fas fa-angle-double-right"></i>
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <div class="bar-center player-bar-center-low">
+                            <span>0.25</span>
+                            <span>
+                                <div class="play-line"></div>
+                            </span>
+                            <span>4.35</span>
+                        </div>
+                    </div>
+
+
+                    <!-- 3 -->
+
+                    <div class="col-right">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-tv"></i>
+                        <i class="fas fa-volume-up"></i>
+                        <span>
+                            <div class="play-line"></div>
+                        </span>
+
+                    </div>
+
+                </div>
 
 
 
