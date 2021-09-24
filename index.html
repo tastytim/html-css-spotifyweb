@@ -8,16 +8,16 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="css/styles.css" />
-<!-- AWESOME -->
+    <!-- AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-        <!-- FONT GOOGLE -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet"> 
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,32 +25,32 @@
     <body>
         <header></header>
         <main>
-
             <!-- MENU NAVIGATION -->
             <div class="container-spotify">
                 <div class="container-left">
                     <div class="menu-nav-list">
                         <ul>
                             <li id="big-logo"><img src="img/logo.svg" alt="img-99"></img></li>
-                            <li id="small-logo"><img  src="img/logo-small.svg" alt="img-1"></img></li>
+                            <li id="small-logo"><img src="img/logo-small.svg" alt="img-1"></img></li>
                             <li>
-                                <img class="home-logo logo" src="img/home.svg" alt="img-2"></img>
-                                <span class="display">Home</span>
+                                <span> <a href="#"><img src="img/home.svg" alt="home"><span class="display">Home</span></a></span>
+                                <a href="#"></a>
                             </li>
                             <li class="grey-text">
-                                <img class="cerca-logo logo" src="img/search.svg" alt="img-3"></img>
-                                <span class="display">Cerca</span>
+
+                                <span> <a href="#"><img src="img/search.svg" alt="search"><span class="display">Cerca</span></a></span>
+                                <a href="#"></a>
                             </li>
                             <li class="grey-text">
-                                <img class="libreria-logo logo" src="img/libreria.svg" alt="img-4"></img>
-                                <span class="display">La tua libreria</span>
+                                <span> <a href="#"><img src="img/libreria.svg" alt="search"><span class="display">La tua libreria</span></a></span>
+                                <a href="#"></a>
                             </li>
                         </ul>
                         <h3 class="h3-playlist display">PLAYLIST</h3>
-                        <div class="flex"><span class="display playlist-plus-text"><i class="fas fa-plus-square grey-text"></i></span>
-                        <span class="display">Crea Playlist</span></div>
-                        
-                        
+                        <div class="flex"><span class="display playlist-plus-text"><i
+                                    class="fas fa-plus-square grey-text"></i></span>
+                            <span class="display">Crea Playlist</span>
+                        </div>
                         <ul class="ul-flex-column display grey-text">
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
@@ -61,135 +61,175 @@
                             <li>Nome Playlist</li>
                         </ul>
                     </div>
-
-                    
-
-
-
-                    <div class="menu-nav-list menu-nav-list-flex-end">
+                    <div class="menu-nav-list">
                         <ul>
                             <li class="img-download grey-text">
                                 <img src="img/download.svg" alt="img-5">
                                 <span class="display">Installa app</span>
-                                
                             </li>
-                            <li class="display"><div class="grey-line grey-text"></div></li>
+                            <li class="display">
+                                <div class="grey-line grey-text"></div>
+                            </li>
                             <li class="img-profile">
                                 <img src="img/profile.svg" alt="img-6">
-                                <span class="john-doe display"><h3>John Doe</h3></span>
+                                <span class="john-doe display">
+                                    <h3>John Doe</h3>
+                                </span>
                             </li>
                         </ul>
                     </div>
                 </div>
-
-
                 <!-- CONTAINER MUSIC -->
                 <div class="container-right">
-
-
-
-
-
-
                     <div class="row-70px row-upgrade">
                         <button class="button-upgrade"><a href="">effetua l'upgrade</a></button>
                     </div>
-
-
-
                     <div class="row-70px row-menu-navigator">
                         <ul class="ul-row-navig-flex">
-                            <li>in evidenza</li>
-                            <li>podcast</li>
-                            <li>classifiche</li>
-                            <li>generi e mood</li>
-                            <li>nuove uscite</li>
-                            <li>scopri</li>
+                            <li><a href="#"> in evidenza</a></li>
+                            <li><a href="#">podcast</a></li>
+                            <li><a href="#">classifiche</a></li>
+                            <li><a href="#">generi e mood</a></li>
+                            <li><a href="#">nuove uscite</a></li>
+                            <li><a href="#">scopri</a></li>
                         </ul>
                     </div>
-
-
-
                     <!-- MUSIC_BLOCK-1 -->
-
-
                     <h1 class="h1">Recently played</h1>
                     <div class="row row-flex-wrap-music">
+        
+
+
                         <div class="div-music-cube">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3>Heavy Metal</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/metal_lifting.jpg" alt="metal">
+                            </div>
+                            <div>
+                                <h3>Heavy Metal</h3>
                             <p>Subtitle</p>
+                            </div>
                         </div>
                         <div class="div-music-cube">
-                            <img src="img/stranger.jpeg" alt="stranger">
-                            <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/stranger.jpeg" alt="stranger">
+                            </div>
+                            <div>
+                                <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon & Michael Stein</p>
+                               
+                            </div>
                         </div>
                         <div class="div-music-cube">
-                            <img src="img/aquietplace.jpeg" alt="aquit">
-                            <h3>A quiet place</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/aquietplace.jpeg" alt="aquit">
+                            </div>
+                            <div>
+                                <h3>A quiet place</h3>
                             <p>Subtitle</p>
+                               
+                            </div>
                         </div>
                         <div class="div-music-cube">
-                            <img src="img/split.jpeg" alt="split">
-                            <h3>A cure for wellness</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/split.jpeg" alt="split">
+                            </div>
+                            <div>
+                                <h3>A cure for wellness</h3>
                             <p>Subtitle</p>
+                               
+                            </div>
                         </div>
                         <div class="div-music-cube">
-                            <img src="img/cure.jpeg" alt="cure">
-                            <h3>Sinister</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/cure.jpeg" alt="cure">
+                            </div>
+                            <div>
+                              <h3>Cure</h3>
                             <p>Subtitle</p>
+                               
+                            </div>
                         </div>
                         <div class="div-music-cube">
-                            <img src="img/sinister.jpeg" alt="sinister">
-                            <h3>Sinister</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/sinister.jpeg" alt="sinister">
+                            </div>
+                            <div>
+                           
+                                <h3>Sinister</h3>
                             <p>Subtitle</p>
+                            </div>
                         </div>
+
+
+                        
+                        
+        
                     </div>
                     <!-- MUSIC_BLOCK-2 -->
                     <h1 class="h1">Creato per John Doe</h1>
                     <p>Piu ascolti, piu accurati saranno i suggerementi</p>
                     <div class="row row-flex-wrap-music">
+
                         <div class="div-music-cube">
-                            <img src="img/radar.jpeg" alt="metal">
-                            <h3>Heavy Metal</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/radar.jpeg" alt="radar">
+                            </div>
+                            <div>
+                              <h3>Heavy Metal</h3>
                             <p>Subtitle</p>
+                             
+                            </div>
                         </div>
                         <div class="div-music-cube">
-                            <img src="img/mixdaily.jpeg" alt="stranger">
-                            <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                            <div class="div-music-cube-img">
+                                <img src="img/mixdaily.jpeg" alt="mixdaily">
+                            </div>
+                            <div>
+                           
+                               <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon & Michael Stein</p>
+                            </div>
                         </div>
-                    </div>
+                        </div>
+
+
                     <!-- MUSIC BLOCK-3 -->
-                    <div><h1 class="h1">Artisti piu popolari</h1>
-                    <p>Piu ascolti, piu accurati saranno i suggerementi</p></div>
-                    
-                    <div class="row row-flex-wrap-music">
+                    <h1 class="h1">Artisti piu popolari</h1>
+                    <p>Piu ascolti, piu accurati saranno i suggerementi</p>
+
+                    <div class="row row-flex-wrap-music last-row-radius-img">
+
+
+
                         <div class="div-music-cube">
-                            <img src="img/youg.jpeg" alt="metal">
+                            <div class="div-music-cube-img div-music-cube-img-radius">
+                                <img src="img/youg.jpeg" alt="youg">
+                            </div>
+                            <div>
                             <h3>Lana del Rey</h3>
                             <p>Subtitle</p>
+                           
+                            </div>
                         </div>
+
                         <div class="div-music-cube">
-                            <img src="img/einaudi.jpeg" alt="stranger">
-                            <h3>Einaudi, Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                            <div class="div-music-cube-img div-music-cube-img-radius">
+                                <img src="img/einaudi.jpeg" alt="mixdaily">
+                            </div>
+                            <div>
+                           <h3>Einaudi, Vol. 1(a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon & Michael Stein</p>
+                         
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
                 <!-- CONTAINER PLAYER -->
-
                 <div class="container-player">
-
-
-
-
                     <!-- 1 -->
                     <div class="col-left">
-
-
                         <img src="img/sinister.jpeg" alt="aaa">
                         <span class="font-bar">
                             <div>Sinister</div>
@@ -201,10 +241,7 @@
                         </span>
 
                     </div>
-
-
                     <!-- 2 -->
-
                     <div class="col-center">
                         <div class="bar-center player-bar-center-high">
                             <i class="fas fa-random"></i>
@@ -221,10 +258,7 @@
                             <span>4.35</span>
                         </div>
                     </div>
-
-
                     <!-- 3 -->
-
                     <div class="col-right">
                         <i class="fas fa-bars"></i>
                         <i class="fas fa-tv"></i>
@@ -232,15 +266,9 @@
                         <span>
                             <div class="play-line"></div>
                         </span>
-
                     </div>
-
                 </div>
-
-
-
             </div>
-
         </main>
         <footer></footer>
     </body>
