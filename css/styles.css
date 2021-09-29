@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-color: teal #191414;
 }
 
 body {
@@ -28,8 +29,23 @@ body {
 .container-right {
   width: calc(100%-50px);
   margin-left: 50px;
-  background-color: #141922;
+  background: linear-gradient(90deg, #191414,#1DB954, plum, teal ,mediumorchid,#191414);
+  background-size: 400% 400%;
   padding-bottom: 70px;
+  animation: background 4s infinite alternate;
+}
+
+/*  */
+@keyframes background {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 
 .ul-flex-column {
@@ -405,6 +421,10 @@ ul.row-navig-flex {
 .div-music-cube-img:hover:after {
   display: inline;
 }
+
+
+
+
 
 @media screen and (min-width: 480px) {
   .menu-nav-list {
